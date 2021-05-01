@@ -1,0 +1,535 @@
+    /* ======================
+
+Template Name: Nick Fury
+Template URI: https://www.webstroop.com
+Author: Moshiur
+Author URI: https://www.rafiul.webstroop.com
+Version: 1.0
+Description: A simple Page of revenge
+
+====================== */
+    /* ======================
+
+    CSS INDEX
+    =========
+
+    0. Google Fonts
+    1. Common CSS
+    2. Reusuable Components
+    3. Hero
+
+====================== */
+    /*===================================
+            Google fonts
+=====================================*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+    /*===================================
+            Common Css
+=====================================*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        color: #fff;
+        background-color: #232a34;
+        font-family: 'Poppins', sans-serif;
+        font-size: 62.5%;
+        font-weight: 400;
+        line-height: 1.7;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        letter-spacing: 0px;
+        margin: 0px;
+        font-family: 'Quicksand', sans-serif;
+        color: #fff;
+        text-transform: capitalize;
+        letter-spacing: .2rem;
+    }
+    
+    a {
+        font-family: 'Quicksand', sans-serif;
+        text-decoration: none;
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: #fff;
+    }
+    
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+        transition: 1s ease-in-out;
+    }
+    
+    a:focus {
+        outline: none;
+        text-decoration: none;
+    }
+    
+    ul,
+    li {
+        display: inline-block;
+        list-style: none;
+    }
+    
+    p,
+    span {
+        margin-bottom: 0;
+        text-align: justify;
+        font-size: 1.6rem;
+    }
+    
+    h4 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    /*===================================
+            Reusable Component
+=====================================*/
+    
+    section,
+    footer {
+        padding: 9rem 0;
+    }
+    
+    .butn {
+        background: #2ca46d;
+        font-size: 1.6rem;
+        padding: .8rem 4rem;
+        transition: all 0.3s;
+        border-radius: 30px;
+        font-weight: 600;
+    }
+    
+    .butn:hover {
+        background-color: #fff;
+        color: #2ca46d;
+        transition: all 0.3s;
+    }
+    
+    section h2 {
+        text-align: center;
+        margin-bottom: 5rem;
+        font-weight: 600;
+        font-size: 3.5rem;
+    }
+    /*===================================
+               Header
+=====================================*/
+    
+    nav {}
+    
+    .navbar-nav li {
+        float: right;
+    }
+    
+    .navbar-nav li a {
+        color: #fff;
+        padding: 1.3rem;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-transform: capitalize;
+    }
+    
+    .navbar-nav li a:hover {
+        color: #198754;
+        border: .2rem solid #198754;
+        cursor: pointer;
+        transition: 1s ease-in-out;
+    }
+    
+    .navbar-toggler ion-icon {
+        color: #fff;
+        font-size: 3rem;
+        border: .4rem solid #fff;
+    }
+    
+    .banner-2nd {
+        margin-top: 18rem;
+    }
+    
+    .banner-txt .py-3 {
+        background-color: #198754;
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .banner-txt h1 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+    
+    .info ion-icon {
+        color: #fff;
+    }
+    
+    .banner-txt {
+        margin-bottom: 2rem;
+    }
+    
+    .social_profile li a {
+        color: #fff;
+        font-size: 2rem;
+        border: .1rem solid #fff;
+        border-radius: 100%;
+        margin-right: 1rem;
+        padding: 1rem;
+    }
+    
+    .f_facebook:hover {
+        background-color: rgb(0, 108, 250);
+    }
+    
+    .f_twitter:hover {
+        background-color: rgb(51, 190, 255);
+    }
+    
+    .f_instagram:hover {
+        background-color: rgb(255, 19, 196);
+    }
+    
+    .f_linkedin:hover {
+        background-color: rgb(106, 208, 255);
+    }
+    
+    .f_skype:hover {
+        background-color: rgb(0, 174, 255);
+    }
+    /*==============
+           nav
+================*/
+    
+    .uk-sticky-fixed {
+        position: fixed i !important;
+        top: 0% !important;
+        left: 0%;
+        background-color: rgba(0, 0, 0, 0.795);
+        z-index: 9800;
+    }
+    /*===================================
+               About
+=====================================*/
+    /*===================================
+               Services
+=====================================*/
+    
+    #services {}
+    
+    .service-box-cont {
+        background-color: #2d343e;
+        position: relative;
+        margin: 5rem 2rem;
+        text-align: left;
+        padding: 5rem;
+    }
+    
+    .service-box-cont span {
+        position: absolute;
+        left: 20%;
+        top: -4rem;
+    }
+    
+    .service-box-cont span ion-icon {
+        color: #fff;
+        background-color: #2ca46d;
+        font-size: 4rem;
+        border-radius: 100%;
+        padding: 2rem;
+    }
+    
+    .service-box-cont h4 {
+        margin: 2rem 0;
+    }
+    /*===================================
+               Portfolio
+=====================================*/
+    
+    .expe-grid-item {
+        background-color: #2d343e;
+    }
+    
+    .bton {
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.2rem;
+        padding: .6rem 2rem;
+        transition: all 0.3s;
+        border-radius: 30px;
+        font-weight: 600;
+        outline: none;
+        border: .2rem solid #fff;
+    }
+    
+    .port-filter button:hover {
+        background-color: #2ca46d;
+        border: #2ca46d;
+    }
+    
+    .port-filter .active {
+        color: #fff;
+        background: #2ca46d;
+        border: 2px solid #2ca46d;
+    }
+    
+    .uk-lightbox-caption {
+        font-size: 3rem;
+    }
+    /*===================================
+               Experience
+=====================================*/
+    
+    .pricing-box {
+        background-color: #2d343e;
+        padding: 3rem 0;
+        position: relative;
+    }
+    
+    .pricing-box h3 {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+    }
+    
+    .pricing-box h2 {
+        font-size: 5rem;
+        font-weight: 600;
+    }
+    
+    .pricing-box h5 {
+        font-size: 1.6rem;
+    }
+    
+    .pricing-box del {
+        font-size: 1.4rem;
+        color: rgb(105, 99, 99)
+    }
+    
+    .spantag {
+        background-color: #2ca46d;
+        position: absolute;
+        left: 0;
+        top: 7rem;
+        padding: 0 2rem;
+        clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0% 100%, 0 50%, 0% 0%);
+    }
+    /*===================================
+               Blog
+=====================================*/
+    
+    .blog-img {
+        width: 100%;
+    }
+    
+    .card {
+        background-color: #2d343e;
+    }
+    
+    .card-head {
+        position: relative;
+    }
+    
+    .spantag2 {
+        background: #2ca46d;
+        font-size: 1rem;
+        display: inline-block;
+        left: 0;
+        padding: 12px 20px;
+        position: absolute;
+        top: 5%;
+        border-radius: 0px 30px 30px 0px;
+    }
+    
+    .card-body h4:hover {
+        color: #2ca46d;
+    }
+    
+    .card-body h4 {
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+    
+    .card-body p {
+        font-size: 1.2rem;
+        text-align: left;
+    }
+    /*===================================
+               Testimonial
+=====================================*/
+    
+    .testi-box {
+        background-color: #2d343e;
+        position: relative;
+    }
+    
+    .testi-img {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        height: 8rem;
+        width: 8rem;
+    }
+    
+    .timg {
+        border-radius: 50%;
+    }
+    
+    .pp {
+        margin-top: 12rem;
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    
+    .testi-box h4 {
+        margin-top: 3rem;
+    }
+    
+    .testi-box ion-icon {
+        color: #f0a500;
+        font-size: 2rem;
+    }
+    /*===================================
+               Contact
+=====================================*/
+    
+    #contact .cont-form {
+        text-align: center;
+    }
+    
+    .form-group input {
+        background: #2d343e;
+        border: 1px solid #2d343e;
+        border-radius: 30px;
+        box-shadow: none;
+        color: #fff;
+        font-size: 16px;
+        height: 50px;
+        padding: 10px;
+        width: 100%;
+        font-family: 'poppins', sans-serif;
+        padding-left: 30px;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .form-group textarea {
+        background: #2d343e;
+        border: 1px solid #2d343e;
+        border-radius: 30px;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+        font-family: 'poppins', sans-serif;
+        padding-left: 30px;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    
+    .inpro:focus,
+    .inprot:focus {
+        background: #2d343e;
+        border: 1px solid #2d343e;
+        color: #fff;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: 0 none;
+    }
+    /*===================================
+               ending
+=====================================*/
+    
+    .ending .row {
+        padding: 0;
+    }
+    
+    .end-p {
+        background-color: #2d343e;
+        text-align: center;
+        margin: 0;
+        padding: 9rem 5rem;
+    }
+    
+    .end-p h2 {
+        text-transform: lowercase;
+        font-size: 2.5rem i !important;
+    }
+    
+    .end-p h3 {
+        font-size: 2rem;
+    }
+    /*===================================
+               Footer
+=====================================*/
+    
+    .footer_social {
+        text-align: center;
+    }
+    
+    .footer_logo {
+        margin-bottom: 20px;
+    }
+    
+    .footer_social ul {
+        list-style: outside none none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .footer_social ul li {
+        display: inline-block
+    }
+    
+    .footer_social ul li a {
+        display: block;
+        font-size: 16px;
+        border-bottom: 1px solid #eee;
+        margin: 0 10px;
+        text-transform: capitalize;
+        text-align: center;
+        -webkit-transition: all 0.2s ease 0s;
+        -o-transition: all 0.2s ease 0s;
+        transition: all 0.2s ease 0s;
+        color: #fff;
+        font-weight: 500;
+    }
+    
+    .footer_social ul li a:hover {
+        color: #2ca46d;
+    }
+    
+    .owl-prev span {
+        font-size: 5rem;
+        position: absolute;
+        top: 40%;
+        left: 0%;
+    }
+    
+    .owl-next span {
+        font-size: 5rem;
+        position: absolute;
+        top: 40%;
+        right: 0%;
+    }
